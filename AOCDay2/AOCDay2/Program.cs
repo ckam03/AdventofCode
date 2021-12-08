@@ -9,9 +9,10 @@ int depth = 0;
 int horizontalPosition = 0;
 
 string[] inputLines = File.ReadAllLines(@"C:\Users\cwkam\development\AdventofCode\AOCDay2\AOCDay2\input.txt");
-foreach(string line in inputLines)
+
+foreach (string line in inputLines)
 {
-    string[] split = line.Split(" ");
+    var split = line.Split(" ");
     string command = split[0];
     int value = int.Parse(split[1]);
     switch (command)

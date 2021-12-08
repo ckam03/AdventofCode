@@ -17,7 +17,7 @@ public class AOC {
                 values.add(value);
             }
             for (int i = 0; i < values.size() - 1; i++) {
-                if(values.get(i+1) > values.get(i)) {
+                if (values.get(i+1) > values.get(i)) {
                     count++;
                 }
             }
