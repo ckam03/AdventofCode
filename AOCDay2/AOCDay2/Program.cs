@@ -41,7 +41,7 @@ int horizontalPositiontwo = 0;
 foreach(string ptwoline in inputLines)
 {
     string[] ptwosplit = ptwoline.Split(" ");
-    string ptwocommand = ptwosplit[0]; 
+    var ptwocommand = ptwosplit[0]; 
     int ptwovalue = int.Parse(ptwosplit[1]);
     switch (ptwocommand)
     {

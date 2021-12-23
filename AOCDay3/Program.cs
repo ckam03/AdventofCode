@@ -7,7 +7,7 @@ var zeros = new int[12];
 var ones = new int[12];
 foreach (var line in input)
 {
-    for (int i = 0; i < line.Length; i++)
+    for (var i = 0; i < line.Length; i++)
     {
         if (line[i] == '0')
         {
@@ -19,7 +19,7 @@ foreach (var line in input)
 }
 var gamma = "";
 var epsilon = "";
-for (int i = 0; i < ones.Length; i++)
+for (var i = 0; i < ones.Length; i++)
 {
     if (ones[i] > zeros[i])
     {
@@ -43,7 +43,7 @@ void PartTwo()
 
     foreach (var line in input)
     {
-        for (int i = 0; i < line.Length; i++)
+        for (var i = 0; i < line.Length; i++)
         {
             if (line[i] == '0')
             {
@@ -54,7 +54,7 @@ void PartTwo()
         }
     }
 
-    for (int i = 0; i < onestwo.Length; i++)
+    for (var i = 0; i < onestwo.Length; i++)
     {
         if (onestwo[i] > zerostwo[i])
         {
